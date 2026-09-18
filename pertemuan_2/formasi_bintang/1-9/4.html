@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 4</title>
+</head>
+<body>
+    <pre id="output"></pre>
+
+    <script>
+
+        let hasil = "";
+
+        hasil += '<span style="color: red;">';
+
+        for (let i = 1; i <= 5; i++) {
+
+            for (let j = 1; j <= i; j++) {
+                hasil += "*";
+            }
+
+            for (let j = 1; j <= 11 - (i * 2); j++) {
+                hasil += " ";
+            }
+
+            for (let j = 1; j <= i; j++) {
+                hasil += "*";
+            }
+
+            hasil += "\n";
+        }
+
+        for (let i = 1; i <= 11; i++) {
+            hasil += "*";
+        }
+
+        hasil += "</span>";
+
+        document.getElementById("output").innerHTML = hasil;
+
+    </script>
+</body>
+</html>

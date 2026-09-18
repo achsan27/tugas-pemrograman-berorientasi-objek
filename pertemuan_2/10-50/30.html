@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soal 30</title>
+</head>
+<body>
+
+    <h2>Bilangan Habis Dibagi 4</h2>
+
+    <input type="number" id="awal" placeholder="n_awal">
+    <input type="number" id="akhir" placeholder="n_akhir">
+    <button onclick="hitung()">Tampilkan</button>
+
+    <p id="hasil"></p>
+
+    <script>
+        function hitung() {
+            let awal = Number(document.getElementById("awal").value);
+            let akhir = Number(document.getElementById("akhir").value);
+            let hasil = "";
+
+      
+            for (let i = awal; i <= akhir; i++) {
+                if (i % 4 == 0) {
+                    hasil += i + " ";
+                }
+            }
+
+            document.getElementById("hasil").innerHTML = hasil;
+        }
+    </script>
+
+</body>
+</html>

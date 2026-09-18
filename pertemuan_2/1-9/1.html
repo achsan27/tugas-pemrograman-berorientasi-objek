@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 1</title>
+  </head>
+  <body>
+    <h1>Membalik Kalimat</h1>
+
+    <label>Masukkan Kalimat</label>
+    <input type="text" name="" id="kalimat" />
+
+    <button onclick="balik_kalimat()">Proses</button>
+
+    <script>
+      function balik_kalimat() {
+        let kalimat = document.getElementById("kalimat").value;
+        let terbalik = kalimat.split("").reverse().join("");
+
+        document.write("<h1>Membalik Kalimat</h1>");
+        document.write("Kalimat awal : " + kalimat + "<br><br>");
+        document.write("Kalimat terbalik : " + terbalik);
+      }
+    </script>
+  </body>
+</html>
